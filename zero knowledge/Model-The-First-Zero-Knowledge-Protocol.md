@@ -1,5 +1,5 @@
 ---
-creation-date: 2022-11-22 
+creation-date: 2022-11-22
 publish: true
 audience: all
 completion: .2
@@ -45,14 +45,14 @@ Let there be a prover $P$ and a verifier $V$ that can send and receive messages.
 4) Repeat process until $V$ is satisfied ($n$ times)
 
 ## Results
-- When $(x,y)$ is an element of $QR$ then $(x,w)$ is an element of $QR$.
-    - $(x,z^2)$ is in $QR$ by definition of quadratic residue, and similarly $(x,z^2y)$ is also in $QR$.
-- When $(x,y)$ is an element of $QNR$, then $(x,w)$ is an element of $QNR$ when $b=1$.
+- When $(x,y)$ is an element of $QR$ then $(x,w)$ is an element of $QR$
+    - $(x,z^2)$ is in $QR$ by definition of quadratic residue, and similarly $(x,z^2y)$ is also in $QR$
+- When $(x,y)$ is an element of $QNR$, then $(x,w)$ is an element of $QNR$ when $b=1$
     - when $b = 1$, $y$ is included in the message
-- If for all $n$ rounds of the protocol the prover sends $c=0$, then the verifier can be certain with probability $1-2^{-n}$ that $y$ is an element of $QR$.
+- If for all $n$ rounds of the protocol the prover sends $c=0$, then the verifier can be certain with probability $1-2^{-n}$ that $y$ is an element of $QR$
     - Notice that every correct response the prover sends has a $\frac{1}{2}$ chance of being a guess, meaning the prover doesn’t actually know how to calculate a quadratic residue
-- If for all $n$ rounds the prover sends $c=b$, then the verifier can be certain with probability $1-2^{-n}$ that $y$ is an element of $QNR$.
-- Otherwise, the verifier is not convinced that the prover knows how to determine whether $(x,y)$ is an element of $QR$.
+- If for all $n$ rounds the prover sends $c=b$, then the verifier can be certain with probability $1-2^{-n}$ that $y$ is an element of $QNR$
+- Otherwise, the verifier is not convinced that the prover knows how to determine whether $(x,y)$ is an element of $QR$
 
 Notice that no knowledge of how to find this result is ever shared, thus making this a Zero Knowledge Proof. We can further specify that this is a Zero Knowledge Interactive Proof because the verifier needs to directly interact with the prover throughout multiple rounds of the protocol. Later on, you will see how proofs can become non-interactive such as zkSNARKs (Zero Knowledge Succinct Non-interactive ARgument of Knowledge).
 
