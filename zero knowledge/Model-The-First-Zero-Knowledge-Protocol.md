@@ -59,8 +59,8 @@ Notice that no knowledge of how to find this result is ever shared, thus making 
 ---
 ## Related Pages
 *The related pages section is for linking this page other the rest of the graph, press F11 for details. If applicable, replace the following dummy links.*
-- primary-topic:: [[Topic-Number Theory]]
-- [[Algorithm-Extended Euclidean Algorithm]]
+- primary-topic:: [[Topic-Zero Knowledge]]
+- [[Model-The First Zero Knowledge Protocol]]
 
 ## External Resources
 *The sources section is for recommending resources on other sites*.
