@@ -36,7 +36,11 @@ Let there be a prover $P$ and a verifier $V$ that can send and receive messages.
 
     b) This lets the verifier verify the provers general knowledge on the computation
 
-3) $P$ responds with $c = \left\{        \begin{array}{ll}1, & \text{if }(x,w) \in QNR \\0, & \text{if }(x,w) \in QR\end{array}\right.$
+3) $P$ responds with $c = \left\{        \begin{array}{ll}
+            1, & \text{if }(x,w) \in QNR \\
+            0, & \text{if }(x,w) \in QR
+        \end{array}
+    \right.$
 
 4) Repeat process until $V$ is satisfied ($n$ times)
 
